@@ -12,5 +12,5 @@ source ~/$OPENSHIFT_APP_NAME/virtenv/bin/activate
 echo "Executing 'python ${OPENSHIFT_REPO_DIR}libs/${APP}/manage.py syncdb --noinput'"
 python ${OPENSHIFT_REPO_DIR}libs/${APP}/manage.py syncdb --noinput
 
-echo "Executing 'python ${OPENSHIFT_REPO_DIR}libs/${APP}/manage.py lfs_init --noinput'"
-python ${OPENSHIFT_REPO_DIR}libs/${APP}/manage.py lfs_init --noinput
+echo "Executing 'python ${OPENSHIFT_REPO_DIR}libs/${APP}/manage.py lfs_init'"
+python ${OPENSHIFT_REPO_DIR}libs/${APP}/manage.py lfs_init
