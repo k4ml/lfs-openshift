@@ -7,8 +7,14 @@ admin.autodiscover()
 import os
 DIRNAME = os.path.dirname(__file__)
 
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse('hello')
+
 urlpatterns = patterns("",
-    (r'', include('lfs.core.urls')),
+    (r'', index),
+    #(r'', include('lfs.core.urls')),
     (r'^manage/', include('lfs.manage.urls')),
 )
 
