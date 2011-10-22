@@ -13,8 +13,7 @@ def index(request):
     return HttpResponse('hello')
 
 urlpatterns = patterns("",
-    (r'', index),
-    #(r'', include('lfs.core.urls')),
+    (r'', include('lfs.core.urls')),
     (r'^manage/', include('lfs.manage.urls')),
 )
 
