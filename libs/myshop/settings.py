@@ -121,7 +121,7 @@ INSTALLED_APPS = (
     'lfs.voucher',
     'paypal.standard.ipn',
     'paypal.standard.pdt',
-    'gunicorn',
+    #'gunicorn',
 )
 
 FORCE_SCRIPT_NAME=""
