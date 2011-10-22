@@ -14,3 +14,6 @@ python ${OPENSHIFT_REPO_DIR}libs/${APP}/manage.py syncdb --noinput
 
 echo "Executing 'python ${OPENSHIFT_REPO_DIR}libs/${APP}/manage.py lfs_init'"
 python ${OPENSHIFT_REPO_DIR}libs/${APP}/manage.py lfs_init
+
+echo "Executing 'python ${OPENSHIFT_REPO_DIR}libs/${APP}/manage.py loaddata'"
+python ${OPENSHIFT_REPO_DIR}libs/${APP}/manage.py loaddata ${OPENSHIFT_REPO_DIR}libs/${APP}/auth.json
