@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import os
+import sys
 
 lib_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../libs'))
 sys.path.insert(0, os.path.join(here, 'myshop'))
